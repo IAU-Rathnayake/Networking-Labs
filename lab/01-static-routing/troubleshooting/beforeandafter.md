@@ -18,9 +18,9 @@ Ping tests failed between LANs, and some interfaces were down or had incorrect r
 | Web Server | Could not reach internal LANs | `ping 172.20.0.135` | Request timed out |
 
 **Screenshot / Evidence:**  
-- `evidence/before-fix.png` — Failed pings from PC1 → PC2 and PC1 → Web Server  
-- `evidence/show-ip-route-before.txt` — Missing static routes  
-
+- `evidence/server.png` — Failed pings from PC1 → Web Server  
+- `evidence/pc2.png` — Failed pings from PC1 → PC2
+- `evidence/branch.png` — Missing static routes  
 ---
 
 ## 🛠️ Fix Applied
