@@ -23,9 +23,14 @@ Ping tests failed between LANs, and some interfaces were down or had incorrect r
 ![Ping from PC1 to Server](../evidence/server.png)  
 - Failed pings from PC1 → PC2
 ![Failed pings from PC1 → PC2](../evidence/PC2.png)
+
+
 - Missing static routes  
+-Branch
 ![Show IP routes in Branch](../evidence/branch.png)
+-HQ
 ![Show IP routes in HQ](../evidence/HQ.png)
+-ISP
 ![Show IP routes in ISP](../evidence/ISP.png)
 ---
 
