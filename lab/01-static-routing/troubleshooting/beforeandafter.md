@@ -22,11 +22,11 @@ Ping tests failed between LANs, and some interfaces were down or had incorrect r
 - Failed pings from PC1 → Web Server
 ![Ping from PC1 to Server](../evidence/server.png)  
 - Failed pings from PC1 → PC2
-![Failed pings from PC1 → PC2](../evidence/pc2.png)
+![Failed pings from PC1 → PC2](../evidence/PC2.png)
 - Missing static routes  
 ![Show IP routes in Branch](../evidence/branch.png)
-![Show IP routes in HQ](../evidence/hq.png)
-![Show IP routes in ISP](../evidence/isp.png)
+![Show IP routes in HQ](../evidence/HQ.png)
+![Show IP routes in ISP](../evidence/ISP.png)
 ---
 
 ## 🛠️ Fix Applied
