@@ -1,0 +1,22 @@
+enable
+configuration terminal
+hostname HQ
+no ip domain-lookup
+interface FastEthernet0/0
+ip address 172.20.0.129 255.255.255.128
+duplex auto
+speed auto
+no shutdown
+interface Serial0/0/0
+ip address 172.20.1.2 255.255.255.128
+no shutdown
+interface Serial0/0/1
+ip address 192.168.38.254 255.255.255.252
+clock rate 64000
+no shutdown
+ip route 192.168.39.64 255.255.255.192 192.168.38.253
+line con 0
+line vty 0 4
+password cisco
+login
+end

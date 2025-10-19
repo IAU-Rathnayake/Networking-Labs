@@ -1,0 +1,15 @@
+enable
+configuration terminal
+hostname ISP
+no ip domain-lookup
+interface FastEthernet0/0
+ip address 192.168.39.65 255.255.255.192
+interface Serial0/0/1
+ip address 192.168.38.253 255.255.255.252
+no shutdown
+ip route 172.20.0.0 255.255.255.0 192.168.38.254
+line con 0
+line vty 0 4
+password cisco
+login
+end

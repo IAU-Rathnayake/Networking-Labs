@@ -1,0 +1,19 @@
+enable
+configuration terminal
+hostname BRANCH!
+no ip domain-lookup
+interface FastEthernet0/0
+ip address 172.20.1.129 255.255.255.128
+duplex auto
+speed auto
+no shutdown
+interface Serial0/0/0
+ip address 172.20.1.1 255.255.255.128
+clock rate 64000
+no shutdown
+ip route 0.0.0.0 0.0.0.0 172.20.0.129
+line con 0
+line vty 0 4
+password cisco
+login
+end
