@@ -4,6 +4,7 @@
 Initial configurations on BRANCH, HQ, and ISP routers contained **static routing and interface errors** that prevented end-to-end communication between PC1, PC2, and the Web Server.  
 Ping tests failed between LANs, and some interfaces were down or had incorrect route entries.
 
+![Network Topology](../evidence/network.png)
 ---
 
 ## 🧪 Before Fix (Symptoms)
