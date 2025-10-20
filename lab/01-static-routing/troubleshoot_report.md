@@ -45,7 +45,7 @@ no ip route 0.0.0.0 0.0.0.0 172.20.0.129
 ip route 0.0.0.0 0.0.0.0 172.20.1.2
 end
 wr
-
+```
 ### HQ Router
 ```bash
 enable
@@ -53,7 +53,7 @@ configure terminal
 ip route 172.20.1.128 255.255.255.128 172.20.1.1
 end
 wr
-
+```
 ### ISP Router
 ```bash
 enable
@@ -67,7 +67,7 @@ ip route 172.20.1.128 255.255.255.128 192.168.38.254
 ip route 172.20.1.0 255.255.255.128 192.168.38.254
 end
 wr
-
+```
 **After Troubleshoot Issues:** 
  
 - Success pings from PC1 → Web Server and PC2
@@ -75,7 +75,7 @@ wr
 
 
 
-**Static Routes and Interfaces After Troubleshoot Issues**
+**Static Routes and Interfaces After Troubleshooting Issues**
 
 - Branch
 ![Show IP routes in Branch](evidence/After/branch.png)
