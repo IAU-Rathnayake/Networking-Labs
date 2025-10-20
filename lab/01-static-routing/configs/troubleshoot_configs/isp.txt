@@ -1,5 +1,5 @@
 enable
-configuration terminal
+configure terminal
 interface fa0/0
 no shutdown
 exit
