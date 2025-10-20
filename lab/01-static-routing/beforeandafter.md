@@ -4,7 +4,7 @@
 Initial configurations on BRANCH, HQ, and ISP routers contained **static routing and interface errors** that prevented end-to-end communication between PC1, PC2, and the Web Server.  
 Ping tests failed between LANs, and some interfaces were down or had incorrect route entries.
 
-![Network Topology](../evidence/Before/network.png)
+![Network Topology](/evidence/Before/network.png)
 ---
 
 ## 🧪 Before Fix (Symptoms)
@@ -20,19 +20,19 @@ Ping tests failed between LANs, and some interfaces were down or had incorrect r
 
 **Screenshot / Evidence:**  
 - Failed pings from PC1 → Web Server
-![Ping from PC1 to Server](../evidence/Before/server.png)  
+![Ping from PC1 to Server](/evidence/Before/server.png)  
 - Failed pings from PC1 → PC2
-![Failed pings from PC1 → PC2](../evidence/Before/PC2.png)
+![Failed pings from PC1 → PC2](/evidence/Before/PC2.png)
 
 
 **Missing static routes:**
 
 - Branch
-![Show IP routes in Branch](../evidence/Before/branch.png)
+![Show IP routes in Branch](/evidence/Before/branch.png)
 - HQ
-![Show IP routes in HQ](../evidence/Before/HQ.png)
+![Show IP routes in HQ](/evidence/Before/HQ.png)
 - ISP
-![Show IP routes in ISP](../evidence/Before/ISP.png)
+![Show IP routes in ISP](/evidence/Before/ISP.png)
 ---
 
 ## 🛠️ Fix Applied
