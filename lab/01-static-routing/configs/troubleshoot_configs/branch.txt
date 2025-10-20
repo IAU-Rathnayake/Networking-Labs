@@ -1,0 +1,6 @@
+enable
+configuration terminal
+no ip route 0.0.0.0 0.0.0.0 172.20.0.129
+ip route 0.0.0.0 0.0.0.0 172.20.1.2
+end
+wr

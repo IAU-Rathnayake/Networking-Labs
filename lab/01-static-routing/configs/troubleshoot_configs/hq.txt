@@ -1,0 +1,5 @@
+en
+configuration terminal
+ip route 172.20.1.128 255.255.255.128 172.20.1.1
+end
+wr

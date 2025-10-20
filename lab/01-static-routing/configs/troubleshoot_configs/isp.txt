@@ -1,0 +1,11 @@
+enable
+configuration terminal
+interface fa0/0
+no shutdown
+exit
+no ip route 172.20.0.0 255.255.255.0 192.168.38.254
+ip route 172.20.0.128 255.255.255.128 192.168.38.254
+ip route 172.20.1.128 255.255.255.128 192.168.38.254
+ip route 172.20.1.0 255.255.255.128 192.168.38.254
+end
+wr
