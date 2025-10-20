@@ -20,9 +20,9 @@ Ping tests failed between LANs, and some interfaces were down or had incorrect r
 
 **Screenshot / Evidence:**  
 - Failed pings from PC1 → Web Server
-![Ping from PC1 to Server](/evidence/Before/server.png)  
+![Ping from PC1 to Server](evidence/Before/server.png)  
 - Failed pings from PC1 → PC2
-![Failed pings from PC1 → PC2](/evidence/Before/PC2.png)
+![Failed pings from PC1 → PC2](evidence/Before/PC2.png)
 
 
 **Missing static routes:**
