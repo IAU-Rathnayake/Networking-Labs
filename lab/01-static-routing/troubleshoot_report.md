@@ -37,8 +37,9 @@ Ping tests failed between LANs, and some interfaces were down or had incorrect r
 
 ## 🛠️ Fix Applied
 
-### BRANCH Router
 ```bash
+### BRANCH Router
+
 enable
 configure terminal
 no ip route 0.0.0.0 0.0.0.0 172.20.0.129
@@ -47,7 +48,7 @@ end
 wr
 
 ### HQ Router
-```bash
+
 enable
 configure terminal
 ip route 172.20.1.128 255.255.255.128 172.20.1.1
@@ -55,7 +56,7 @@ end
 wr
 
 ### ISP Router
-```bash
+
 enable
 configure terminal
 interface fa0/0
@@ -67,20 +68,20 @@ ip route 172.20.1.128 255.255.255.128 192.168.38.254
 ip route 172.20.1.0 255.255.255.128 192.168.38.254
 end
 wr
-
+``` 
 **After Troubleshoot Issues:** 
  
 - Success pings from PC1 → Web Server and PC2
-![Ping from PC1 to Server](evidence/After/ping.png)  
+![Ping from PC1 to Server](evidence/After/Ping.png)  
 
 
 
-**Static Routes and Interfaces After Troubleshoot Issues**
+**Static Routes and Interfaces After Troubleshooting Issues**
 
 - Branch
 ![Show IP routes in Branch](evidence/After/branch.png)
 - HQ
-![Show IP routes in HQ](evidence/After/HQ.png)
+![Show IP routes in HQ](evidence/After/hq.png)
 - ISP
-![Show IP routes in ISP](evidence/After/ISP.png)
+![Show IP routes in ISP](evidence/After/isp.png)
 ---
