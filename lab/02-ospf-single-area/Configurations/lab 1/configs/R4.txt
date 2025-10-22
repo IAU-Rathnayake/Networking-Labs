@@ -1,0 +1,22 @@
+en
+conf t
+hos R4
+no ip domain-lookup
+int f0/1
+ip add 172.16.4.1 255.255.255.224
+no sh
+int s0/0/0
+ip add 192.168.24.2 255.255.255.252
+clock rate 64000
+no sh
+int s0/0/1
+ip add 192.168.34.6 255.255.255.252
+clock rate 64000
+no sh
+exit
+router ospf 1
+router-id 4.4.4.4
+network 172.16.4.0 0.0.0.31 area 0
+network 192.168.34.4 0.0.0.3 area 0
+network 192.168.24.0 0.0.0.3 area 0
+exit

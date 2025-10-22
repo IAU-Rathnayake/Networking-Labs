@@ -1,0 +1,18 @@
+en
+conf t
+hos R2
+no ip domain-lookup
+int s0/0/0
+ip add 192.168.12.2 255.255.255.252
+clock rate 64000
+no sh
+int s0/0/1
+ip add 192.168.24.1 255.255.255.252
+clock rate 64000
+no sh
+exit
+router ospf 1
+router-id 2.2.2.2
+network 192.168.12.0 0.0.0.3 area 0
+network 192.168.24.0 0.0.0.3 area 0
+exit
